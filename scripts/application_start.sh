@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 cd $CONFLUENT_HOME/bin
 echo "`date` starting services..." >> /tmp/kafka_deploy.log
 confluent local start
