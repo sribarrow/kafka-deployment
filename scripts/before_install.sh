@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-sudo yum -y ypdate
+sudo yum -y update
 sudo yum -y install java-1.8.0
 sudo yum list >> tmp/kafka_deploy.log
 sudo yum -y install wget 
