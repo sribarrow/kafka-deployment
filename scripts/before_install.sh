@@ -1,8 +1,6 @@
 #!/usr/bin/bash
-sudo yum -y update
-sudo yum -y install java-1.8.0
-sudo yum list >> tmp/kafka_deploy.log
-sudo yum -y install wget 
+
+./scripts/primer.sh
 
 DIR = "/apps"
 if [ -d "$DIR" ]; then
