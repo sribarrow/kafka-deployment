@@ -23,9 +23,4 @@ wget -0 https://packages.confluent.io/archive/5.5/confluent-5.5.0-2.11.tar.gz
 echo "`date` untarring Confluent package" >> /tmp/kafka_deploy.log
 tar -xvzf confluent-5.5.0-2.11.tar.gz
 echo "`date` setting env variable & PATH" >> /tmp/kafka_deploy.log
-export CONFLUENT_HOME=/apps/confluent-5.5.0
-export PATH=$PATH:$CONFLUENT_HOME/bin
-cd $CONFLUENT_HOME/bin
-echo "`date` checking Status" >> /tmp/kafka_deploy.log
-confluent local status >> /tmp/kafka_deploy.log
 
