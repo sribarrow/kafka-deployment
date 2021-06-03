@@ -1,5 +1,8 @@
 #!/usr/bin/bash
 
+#sudo yum list >> tmp/kafka_deploy.log
+sudo service codedeploy-agent status >> tmp/kafka_deploy.log
+
 DIR = "/apps"
 if [ -d "$DIR" ]; then
     echo "`date` ${DIR} directory exists" >> /tmp/kafka_deploy.log

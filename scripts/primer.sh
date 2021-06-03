@@ -20,5 +20,3 @@ sudo ./install auto
 
 sudo ./install auto -v releases/codedeploy-agent-###.rpm
 
-sudo yum list >> tmp/kafka_deploy.log
-sudo service codedeploy-agent status >> tmp/kafka_deploy.log
