@@ -12,6 +12,7 @@ else
     sudo mkdir ${DIR}
     chmod 777 ${DIR}
 fi
+cd /apps
 echo "`date` downloading Confluent package" >> /tmp/kafka_deploy.log
 wget https://packages.confluent.io/archive/5.5/confluent-5.5.0-2.11.tar.gz
 echo "`date` untarring Confluent package" >> /tmp/kafka_deploy.log
