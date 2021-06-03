@@ -1,4 +1,5 @@
-#!/usr/bin/bash
+#!/bin/bash
+
 INS="echo $CONFLUENT_HOME"
 if [ -z ${INS} ];
 then
