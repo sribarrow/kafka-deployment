@@ -1,7 +1,5 @@
 #!/usr/bin/bash
 
-./scripts/primer.sh
-
 DIR = "/apps"
 if [ -d "$DIR" ]; then
     echo "`date` ${DIR} directory exists" >> /tmp/kafka_deploy.log
@@ -22,7 +20,3 @@ cd $CONFLUENT_HOME/bin
 echo "`date` checking Status" >> /tmp/kafka_deploy.log
 confluent local status >> /tmp/kafka_deploy.log
 
-# echo "`date` creating kafka user/group ..." >> /tmp/kafka_deploy.log
-# echo "`date` downloading Confluent ..." >> /tmp/kafka_deploy.log
-# echo "`date` untarring Confluent ..." >> /tmp/kafka_deploy.log
-# echo "`date` changing privileges  ..." >> /tmp/kafka_deploy.log

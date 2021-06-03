@@ -1,4 +1,4 @@
-!#/usr/bin/bash
+#!/usr/bin/bash
 
 sudo yum -y update
 sudo yum -y install ruby
