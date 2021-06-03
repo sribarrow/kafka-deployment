@@ -4,7 +4,7 @@
 sudo service codedeploy-agent status >> tmp/kafka_deploy.log
 
 DIR = "/apps"
-if [ -d "$DIR" ]; then
+if [ -d "${DIR}" ]; then
     echo "`date` ${DIR} directory exists" >> /tmp/kafka_deploy.log
 else
     echo "`date`  creating ${DIR} directory" >> /tmp/kafka_deploy.log
