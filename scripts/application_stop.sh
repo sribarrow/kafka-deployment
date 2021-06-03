@@ -1,6 +1,6 @@
-#!/bin/bash
-$INS = "echo $CONFLUENT_HOME"
-if [ -z "$INS" ];
+#!/usr/bin/bash
+INS="echo $CONFLUENT_HOME"
+if [ -z ${INS} ];
 then
    echo "`date` stopping services..." > /tmp/kafka_deploy.log
   # confluent local stop
